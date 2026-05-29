@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Display Properties</title>
+
+    <!-- Internal CSS -->
+    <style>
+
+        /* block property */
+        .block-box{
+            display: block;
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* inline property */
+        .inline-box{
+            display: inline;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        /* inline-block property */
+        .inline-block-box{
+            display: inline-block;
+            background-color: lightcoral;
+            width: 120px;
+            height: 60px;
+            margin: 10px;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        /* none property */
+        .hidden-box{
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Display Properties Example</h1>
+
+    <!-- Block -->
+    <h2>1. display: block</h2>
+    <div class="block-box">Block Element 1</div>
+    <div class="block-box">Block Element 2</div>
+
+    <p>
+        Block elements take full width and start from a new line.
+    </p>
+
+    <hr>
+
+    <!-- Inline -->
+    <h2>2. display: inline</h2>
+
+    <span class="inline-box">Inline 1</span>
+    <span class="inline-box">Inline 2</span>
+    <span class="inline-box">Inline 3</span>
+
+    <p>
+        Inline elements stay in the same line and take only needed width.
+    </p>
+
+    <hr>
+
+    <!-- Inline Block -->
+    <h2>3. display: inline-block</h2>
+
+    <div class="inline-block-box">Box 1</div>
+    <div class="inline-block-box">Box 2</div>
+    <div class="inline-block-box">Box 3</div>
+
+    <p>
+        Inline-block elements stay in one line but width and height can be given.
+    </p>
+
+    <hr>
+
+    <!-- None -->
+    <h2>4. display: none</h2>
+
+    <div class="hidden-box">
+        You cannot see this text because display is none.
+    </div>
+
+    <p>
+        display:none hides the element completely.
+    </p>
+
+</body>
+</html>
